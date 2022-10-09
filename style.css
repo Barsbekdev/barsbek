@@ -1,0 +1,56 @@
+.body{
+    background: black;
+}
+.cirkle{
+    width: 330px;
+
+    height: 330px;
+    background: brown;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    animation: 2s circeleKey linear infinite;
+}
+@keyframes circeleKey  {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.img{
+    animation: 2s imgKey linear infinite;
+
+    font-size: 500px;
+}
+@keyframes imgKey {
+    from{
+        transform: rotate3d( 0,0,0,0turn);
+    }
+    to{
+        transform: rotate3d(1,1,1,01turn);
+    }
+}
+.btn{
+    padding: 10px 15px;
+    background: transparent;
+    font-size: 30px;
+    border-top: solid ;
+    border-left: solid 2px red;
+    border-bottom: solid 2px black;
+    border-right: solid 2px orange;
+    border-radius: 20px;
+    color: red;
+    animation: 2s btnKey linear infinite;
+}
+@keyframes bthKey {
+    0%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(1.4,1.4);
+        background: aquamarine;
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
